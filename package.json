@@ -1,0 +1,14 @@
+{
+  "name": "text-to-svg",
+  "version": "1.0.0",
+  "description": "text-to-svg",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "text-to-svg": "^3.1.5"
+  },
+  "author": "istanhua",
+  "license": "MIT",
+  "private": false
+}
