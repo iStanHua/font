@@ -8,18 +8,15 @@ class App {
 
   init() {
 
-    const ttfList = [
-      'ALLED',
-      'FB3222CCA9341F69',
-      'FrederickatheGreat-Regular',
-      'Geostar-Regular',
-      'handlee-v8-latin-regular',
-      'LESLIEB'
-    ]
+    const ttfList = []
+
+    fs.readdirSync('./fonts').forEach((file) => {
+      ttfList.push(file)
+    })
 
     ttfList.forEach(t => {
-      const textToSVG = TextToSVG.loadSync(`./fonts/${t}.ttf`)
-      const text = 'H'
+      const textToSVG = TextToSVG.loadSync(`./fonts/${t}`)
+      const text = 'T'
       const svg = textToSVG.getSVG(text, {
         x: 0,
         y: 0,
