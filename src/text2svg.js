@@ -47,10 +47,10 @@ module.exports = class Text2SVG {
    */
   static feronia() {
     let chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    this.textToSVG('MontserratAlternates-Bold.ttf', chars)
+    this.textToSVG('Eczar-Regular.ttf', chars)
     let pos = chars.length
     for (let i = 0; i < pos; i++) {
-      this.textToSVG('MontserratAlternates-Bold.ttf', chars.charAt(i))
+      this.textToSVG('Eczar-Regular.ttf', chars.charAt(i))
     }
   }
 }
