@@ -1,4 +1,4 @@
-# text-to-svg
+# font
 
 ## Project setup
 ```
@@ -7,5 +7,5 @@ npm install
 
 ## Run project
 ```
-npm start
+npm run serve
 ```
