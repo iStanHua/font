@@ -7,9 +7,8 @@ module.exports = class Svg2TTF {
   }
 
   static start() {
-    const ttf = svg2ttf(fs.readFileSync('./dist/svgs/myfont.svg', 'utf8'), {})
-    console.log(ttf)
-    fs.writeFileSync('./dist/fonts/myfont.ttf', Buffer.from(ttf.buffer))
-    console.log(`./dist/fonts/myfont.ttf created.`)
+    const svg = svg2ttf(fs.readFileSync('./dist/svgs/iconfont.svg', 'utf8'), {})
+    fs.writeFileSync('./dist/fonts/iconfont.ttf', Buffer.from(svg.buffer))
+    console.log(`./dist/fonts/iconfont.ttf created.`)
   }
 }
